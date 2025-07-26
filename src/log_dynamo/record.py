@@ -2,8 +2,8 @@ import inspect
 from dataclasses import dataclass
 from typing import Optional
 
-from log_dynamo.level import LogLevel
-from log_dynamo.utils import link_dynamo_table, LogTimeHelper
+from src.log_dynamo.level import LogLevel
+from src.log_dynamo.utils import link_dynamo_table, LogTimeHelper
 
 
 @dataclass

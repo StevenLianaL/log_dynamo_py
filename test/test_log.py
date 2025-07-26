@@ -1,5 +1,5 @@
-from log_dynamo.access import LogAccess
-from log_dynamo.record import LogRecord
+from src.log_dynamo.access import LogAccess
+from src.log_dynamo.record import LogRecord
 
 access_key = ""
 secret_key = ""
