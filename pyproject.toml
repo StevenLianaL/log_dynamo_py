@@ -1,0 +1,7 @@
+[project]
+name = "log-dynamo"
+version = "0.1.0"
+description = "Log by DynamoDB"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
