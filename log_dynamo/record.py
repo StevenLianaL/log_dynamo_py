@@ -34,7 +34,7 @@ class LogRecord:
                 "sk": sk,
                 "app": self.app,
                 "func": func_name,
-                "level": level,
+                "level": level.value,
                 "log": log,
                 "user": user,
             }

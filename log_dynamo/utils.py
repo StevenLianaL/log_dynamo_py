@@ -1,5 +1,4 @@
-from datetime import datetime
-from zoneinfo import ZoneInfo
+from datetime import datetime, timezone
 
 import boto3
 
@@ -29,12 +28,12 @@ def link_dynamo_table(
 class LogTimeHelper:
     @classmethod
     def current_month(cls):
-        return f"{datetime.now(ZoneInfo('UTC')):%Y-%m}"
+        return f"{datetime.now(timezone.utc):%Y-%m}"
 
     @classmethod
     def current_day(cls):
-        return f"{datetime.now(ZoneInfo('UTC')):%Y-%m-%d}"
+        return f"{datetime.now(timezone.utc):%Y-%m-%d}"
 
     @classmethod
     def current_time(cls):
-        return f"{datetime.now(ZoneInfo('UTC')):%H:%M:%S:%f}"
+        return f"{datetime.now(timezone.utc):%H:%M:%S:%f}"
