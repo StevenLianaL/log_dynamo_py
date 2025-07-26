@@ -71,7 +71,7 @@ wheels = [
 
 [[package]]
 name = "log-dynamo"
-version = "0.1.2"
+version = "0.1.4"
 source = { editable = "." }
 dependencies = [
     { name = "boto3" },
