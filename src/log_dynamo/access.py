@@ -27,18 +27,24 @@ class LogAccess:
             SET 
                 #c = if_not_exists(#c, :start) + :inc,
                 #a = :app,
-                #f = :func
+                #f = :func,
+                #m = :month,
+                #p = :project
         """,
             ExpressionAttributeNames={
                 "#c": "count",
                 "#a": "app",
                 "#f": "func",
+                "#m": "month",
+                "#p": "project",
             },
             ExpressionAttributeValues={
                 ":start": 0,
                 ":inc": 1,
                 ":app": app,
                 ":func": func,
+                ":month": month,
+                ":project": self.project,
             },
             ReturnValues="UPDATED_NEW",
         )
